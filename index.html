@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Tailwind CSS</title>
+    <link href="./src/output.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Start -->
+     <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+        <div class="container">
+            <div class="flex items-center justify-between relative">
+               <div class="px-4">
+                    <a href="#homepage" class="font-bold text-lg text-primary block py-6">Herfando</a>
+               </div> 
+
+               <div class="flex items-center px-4">
+                    <button id="hamburger" name="hamburger" type="button" class="block absolute rigth-4 lg:hidden">
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+                    </button>
+
+                <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+                    <ul class="block lg:flex">
+                      <li class="group">
+                        <a href="#homepage" class="text-base lg:font-semibold lg:text-slate-500 py-2 mx-8 group-hover:text-primary flex">Home Page</a>
+                      </li>  
+                      <li class="group">
+                        <a href="#about" class="text-base lg:font-semibold lg:text-slate-500 py-2 mx-8 group-hover:text-primary flex">About Me</a>
+                      </li>  
+                      <li class="group">
+                        <a href="#portfolio" class="text-base lg:font-semibold lg:text-slate-500 py-2 mx-8 group-hover:text-primary flex">Portfolio</a>
+                      </li>  
+                      <li class="group">
+                        <a href="#clients" class="text-base lg:font-semibold lg:text-slate-500 py-2 mx-8 group-hover:text-primary flex">Clients</a>
+                      </li>
+                      <li class="group">
+                        <a href="#blog" class="text-base lg:font-semibold lg:text-slate-500 py-2 mx-8 group-hover:text-primary flex">Blog</a>
+                      </li>  
+                      <li class="group">
+                        <a href="#contact" class="text-base lg:font-semibold lg:text-slate-500 py-2 mx-8 group-hover:text-primary flex">Contact</a>
+                      </li>  
+                    </ul>
+                </nav>
+
+               </div>
+
+            </div>
+        </div>
+     </header>
+    <!-- Header End -->
+
+    <!-- Hero Section Start -->
+    <section id="homepage" class="pt-36">
+    <div class="container">
+        <div class="flex flex-wrap">
+            <div class="w-full self-center px-4 lg:w-1/2">
+                <h1 class="text-base font-semibold text-primary md:text-xl lg:text-2xl">Hi EveryBody 👋, I am <span class="block text-4xl mt-1 font-bold text-dark lg:text-5xl">Herfando</span></h1>
+                <h2 class="font-medium text-secondary text-lg mb-5 lg:text-2xl"><span class="text-dark">Web Developer &</span> Engineer</h2>
+                <p class="font-medium text-secondary mb-10 leading-relaxed">Learning web programming is easy <span class="text-dark font-bold">and FUN!</span></p>
+                <a href="#" class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:bg-opacity-60 duration-300 ease-in-out">Contact Me</a>
+            </div>
+            
+            <div class="w-full self-end px-4 lg:w-1/2 scale-90 -z-10">
+                <div class="relative mt-10 lg:mt-9 lg:rigth-0">
+                    <img src="src/fando.png" alt="fando" class="max-w-full mx-auto"/>
+                    <span class="absolute bottom-0 -z-10 left-1/2 -translate-x-1/2 md:scale-125 sm:scale-25"><svg width="400" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#bfdbfe" d="M58.9,-18.5C67.4,6.8,59,38.2,40.9,49.8C22.8,61.3,-4.9,53.1,-23.4,38.3C-41.9,23.4,-51.2,1.9,-45.7,-19.3C-40.3,-40.4,-20.1,-61.2,2.6,-62.1C25.3,-62.9,50.5,-43.8,58.9,-18.5Z" transform="translate(100 100) scale(1.1)" />
+                      </svg></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- About Section Start -->
+        <section id="about" class="pt-36 pb-32">
+            <div class="container">
+                <div class="flex flex-wrap">
+                    <div class="w-full px-4 mb-10 lg:w-1/2">
+                        <h4 class="font-bold uppercase text-primary text-lg mb-3">About Me</h4>
+                        <h2 class="font-bold text-dark text-3xl mb-5 max-w-md lg:text-4xl">Let's Learn Programming!</h2>
+                        <P class="font-medium text-base text-secondary max-w-xl lg:text-lg">Lorem ipsum dolor sit amet cons
+                            ectetur adipisicing elit. Reiciendis quisquam sint quis eos aut dolorum sunt?</P>
+                    </div>
+
+                    <div class="w-full px-4 lg:w-1/2">
+                        <h3 class="font-semibold text-dark text-2xl mb-4 lg:text-3xl lg:pt-10">Let's Be Friends</h3>
+                        <p class="font-medium text-base text-secondary mb-6 lg:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam obcaecati omnis nulla beatae nostrum tempore dignissimos libero possimus.</p>
+                        <div class="flex items-center">
+                            <!-- Yahoo Mail -->
+                             <a href="https://herfando_91@yahoo.com" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-[#FF0000]">
+                                <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg enable-background="new 0 0 512 512" height="512px" id="Layer_1" version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="yahoo"><path d="M254.5,16.5c-131.996,0-239,107.004-239,239s107.004,239,239,239s239-107.004,239-239   S386.496,16.5,254.5,16.5z M412.892,413.892C370.584,456.2,314.333,479.5,254.5,479.5c-59.833,0-116.084-23.3-158.392-65.608   C53.8,371.584,30.5,315.333,30.5,255.5c0-59.833,23.3-116.084,65.608-158.392C138.416,54.8,194.667,31.5,254.5,31.5   c59.833,0,116.084,23.3,158.392,65.608C455.2,139.416,478.5,195.667,478.5,255.5C478.5,315.333,455.2,371.584,412.892,413.892z" fill="#8A2A8F"/><polygon clip-rule="evenodd" fill="#8A2A8F" fill-rule="evenodd" points="378.421,343.25 346.975,339.404 350.469,311.808    381.916,315.647 378.421,343.25  "/><polygon clip-rule="evenodd" fill="#8A2A8F" fill-rule="evenodd" points="409.874,175.865 356.062,169.232 356.407,293.988    379.824,297.128 409.874,175.865  "/><polygon clip-rule="evenodd" fill="#8A2A8F" fill-rule="evenodd" points="378.421,343.25 346.975,339.404 350.469,311.808    381.916,315.647 378.421,343.25  "/><path clip-rule="evenodd" d="M301.549,197.534c-21.669-16.422-49.622-24.458-83.52-24.458   c-34.244,0-62.196,8.035-83.515,24.458c-21.664,16.071-32.499,36.694-32.499,62.204c0,25.86,10.835,46.827,32.499,62.904   c17.679,13.329,39.93,21.131,66.545,23.407h33.806c26.424-2.276,48.712-10.078,66.684-23.407   c21.314-16.076,32.148-37.043,32.148-62.904C333.696,234.229,322.862,213.606,301.549,197.534z M285.472,238.419l-16.422,3.5   c-2.449,0.691-9.087,5.588-20.618,15.026c-12.231,9.782-18.522,16.071-19.568,19.22l-0.699,8.732l-0.35,5.246l1.399,13.273   l21.664,0.351l-0.35,6.638h-35.292l-31.451,0.352l1.049-6.294l10.131-0.345c5.244-0.351,8.392-1.047,9.438-2.104   c0.698-0.691,1.046-4.885,1.046-12.226v-4.535l-0.348-9.088c-0.698-2.098-6.29-9.784-17.12-23.067   c-11.182-13.627-18.522-21.668-22.02-24.467l-20.267-2.795v-5.944c1.051-0.689,12.234-0.689,32.852-0.344   c14.324-0.345,26.208-0.345,35.643,0.344l-0.701,4.897l-21.316,2.104c6.639,9.782,16.775,23.406,30.403,40.529   c17.821-13.627,27.254-22.366,27.602-26.205l-18.167-2.798l-1.4-6.288h30.404l28.648,0.349L285.472,238.419z" fill="#8A2A8F" fill-rule="evenodd"/></g></svg>                            
+                            </a>
+
+                             <!-- WhatsApp -->
+                             <a href="https://wa.me/+6282213114640" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-[#FF0000]">
+                                <?xml version="1.0" ?><svg id="Layer_1" style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style type="text/css">.st0{fill:#25D366;}.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}</style><title/><g><path class="st0" d="M500,1000L500,1000C223.9,1000,0,776.1,0,500v0C0,223.9,223.9,0,500,0h0c276.1,0,500,223.9,500,500v0   C1000,776.1,776.1,1000,500,1000z"/><g><g id="WA_Logo"><g><path class="st1" d="M733.9,267.2c-62-62.1-144.6-96.3-232.5-96.4c-181.1,0-328.6,147.4-328.6,328.6      c0,57.9,15.1,114.5,43.9,164.3L170.1,834l174.2-45.7c48,26.2,102,40,157,40h0.1c0,0,0,0,0,0c181.1,0,328.5-147.4,328.6-328.6      C830.1,411.9,796,329.3,733.9,267.2z M501.5,772.8h-0.1c-49,0-97.1-13.2-139-38.1l-10-5.9L249,755.9l27.6-100.8l-6.5-10.3      c-27.3-43.5-41.8-93.7-41.8-145.4c0.1-150.6,122.6-273.1,273.3-273.1c73,0,141.5,28.5,193.1,80.1c51.6,51.6,80,120.3,79.9,193.2      C774.6,650.3,652,772.8,501.5,772.8z M651.3,568.2c-8.2-4.1-48.6-24-56.1-26.7c-7.5-2.7-13-4.1-18.5,4.1      c-5.5,8.2-21.2,26.7-26,32.2c-4.8,5.5-9.6,6.2-17.8,2.1c-8.2-4.1-34.7-12.8-66-40.8c-24.4-21.8-40.9-48.7-45.7-56.9      c-4.8-8.2-0.5-12.7,3.6-16.8c3.7-3.7,8.2-9.6,12.3-14.4c4.1-4.8,5.5-8.2,8.2-13.7c2.7-5.5,1.4-10.3-0.7-14.4      c-2.1-4.1-18.5-44.5-25.3-61c-6.7-16-13.4-13.8-18.5-14.1c-4.8-0.2-10.3-0.3-15.7-0.3c-5.5,0-14.4,2.1-21.9,10.3      c-7.5,8.2-28.7,28.1-28.7,68.5c0,40.4,29.4,79.5,33.5,84.9c4.1,5.5,57.9,88.4,140.3,124c19.6,8.5,34.9,13.5,46.8,17.3      c19.7,6.3,37.6,5.4,51.7,3.3c15.8-2.4,48.6-19.9,55.4-39c6.8-19.2,6.8-35.6,4.8-39C665,574.4,659.5,572.4,651.3,568.2z"/></g></g></g></g></svg>                            
+                            </a>
+
+                            <!-- GitHub -->
+                             <a href="https://github.com/herfando?tab=repositories" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-[#FF0000]">
+                                <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.0//EN'  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'><svg enable-background="new 0 0 32 32" height="32px" id="Layer_1" version="1.0" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path clip-rule="evenodd" d="M16.003,0C7.17,0,0.008,7.162,0.008,15.997  c0,7.067,4.582,13.063,10.94,15.179c0.8,0.146,1.052-0.328,1.052-0.752c0-0.38,0.008-1.442,0-2.777  c-4.449,0.967-5.371-2.107-5.371-2.107c-0.727-1.848-1.775-2.34-1.775-2.34c-1.452-0.992,0.109-0.973,0.109-0.973  c1.605,0.113,2.451,1.649,2.451,1.649c1.427,2.443,3.743,1.737,4.654,1.329c0.146-1.034,0.56-1.739,1.017-2.139  c-3.552-0.404-7.286-1.776-7.286-7.906c0-1.747,0.623-3.174,1.646-4.292C7.28,10.464,6.73,8.837,7.602,6.634  c0,0,1.343-0.43,4.398,1.641c1.276-0.355,2.645-0.532,4.005-0.538c1.359,0.006,2.727,0.183,4.005,0.538  c3.055-2.07,4.396-1.641,4.396-1.641c0.872,2.203,0.323,3.83,0.159,4.234c1.023,1.118,1.644,2.545,1.644,4.292  c0,6.146-3.74,7.498-7.304,7.893C19.479,23.548,20,24.508,20,26c0,2,0,3.902,0,4.428c0,0.428,0.258,0.901,1.07,0.746  C27.422,29.055,32,23.062,32,15.997C32,7.162,24.838,0,16.003,0z" fill="#181616" fill-rule="evenodd"/><g/><g/><g/><g/><g/><g/></svg>                            
+                            </a>
+
+                            <!-- LinkedId -->
+                             <a href="https://www.linkedin.com/in/herfando-933b48107/" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-[#FF0000]">
+                                <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.0//EN'  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'><svg enable-background="new 0 0 32 32" height="32px" id="Layer_1" version="1.0" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><circle clip-rule="evenodd" cx="16" cy="16" fill="#007BB5" fill-rule="evenodd" r="16"/><g><rect fill="#FFFFFF" height="14" width="4" x="7" y="11"/><path d="M20.499,11c-2.791,0-3.271,1.018-3.499,2v-2h-4v14h4v-8c0-1.297,0.703-2,2-2c1.266,0,2,0.688,2,2v8h4v-7    C25,14,24.479,11,20.499,11z" fill="#FFFFFF"/><circle cx="9" cy="8" fill="#FFFFFF" r="2"/></g></g><g/><g/><g/><g/><g/><g/></svg>                            
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- About Section End -->
+
+
+    <!-- Portfolio Section Start -->
+        <section id="portfolio" class="pt-36 pb-32 bg-slate-100"></section>
+        <div class="container">
+            <div class="w-full px-4">
+                <div class="max-w-xl mx-auto text-center mb-16">
+                    <h4 class="font-semibold text-lg text-primary mb-2 uppercase">Portfolio</h4>
+                    <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl">New Project</h2>
+                    <p class="font-medium text-md text-secondary md:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. In totam sed nobis doloremque recusandae temporibus! Nesciunt tempora impedit ipsa officiis.</p>
+                </div>
+            </div>
+
+            <div class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
+                <div class="mb-12 p-4 lg:w-1/2">
+                    <div class="rounded-md shadow-md overflow-hidden">
+                        <img src="src/portfolio/next-js.png" alt="Next.js Dashboard" width="w-full"/>
+                    </div>
+                    <h3 class="font-semibold text-xl text-dark mt-10 mb-3">Next.js Dashboard</h3>
+                    <p class="font-medium text-base text-secondary">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate numquam praesentium molestias.</p>
+                </div>
+
+                <div class="mb-12 p-4 lg:w-1/2">
+                    <div class="rounded-md shadow-md overflow-hidden">
+                        <img src="src/portfolio/React-js-todolist.png" alt="React.js Todolist" width="w-full"/>
+                    </div>
+                    <h3 class="font-semibold text-xl text-dark mt-10 mb-3">React.js Todolist</h3>
+                    <p class="font-medium text-base text-secondary">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate numquam praesentium molestias.</p>
+                </div>
+            </div>
+        </div>
+    <!-- Portfolio Section End -->
+
+
+    <!-- Clients Section Start -->
+        <section id="clients" class="pt-36 pb-32 bg-slate-950">
+            <div class="container">
+                <div class="w-full px-4">
+                    <div class="mx-auto text-center mb-16">
+                        <h4 class="font-semibold text-lg text-primary mb-2 uppercase">Clients</h4>
+                        <h2 class="font-bold text-white text-3xl mb-4 sm:text-4xl lg:text-5xl">Lorem, ipsum dolor.</h2>
+                        <p class="font-medium text-md text-secondary md:text-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro voluptatibus veniam pariatur.</p>
+                    </div>
+                </div>
+
+                <div class="w-full px-4">
+                    <div class="flex flex-wrap justify-center">
+                        <a href="#" class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+                            <img src="./src/clients/Bukalapak.png" alt="Bukalapak">
+                        </a> 
+                        <a href="#" class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+                            <img src="./src/clients/Gojek.png" alt="Gojek">
+                        </a> 
+                        <a href="#" class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+                            <img src="./src/clients/Tokopedia.png" alt="Tokopedia">
+                        </a> 
+                        <a href="#" class="max-w-[120px] mx-4 grayscale opacity-60 transition hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+                            <img src="./src/clients/Traveloka.png" alt="Traveloka">
+                        </a> 
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- Client Section End -->
+
+
+        <!-- Blog Section Start -->
+        <section id="blog" class="pt-36 pb-32 bg-slate-100">
+            <div class="w-full px-4">
+                <div class="max-w-xl mx-auto text-center mb-16">
+                    <h4 class="font-semibold text-lg text-primary mb-2 uppercase">Blog</h4>
+                    <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl">Lorem, ipsum.</h2>
+                    <p class="font-medium text-md text-secondary md:text-lg mx-auto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi ab blanditiis error tempore!</p>
+                </div>
+
+                <div class="flex flex-wrap">
+                    <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+                        <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
+                            <img src="https://fastly.picsum.photos/id/2/5000/3333.jpg?hmac=_KDkqQVttXw_nM-RyJfLImIbafFrqLsuGO5YuHqD-qQ" alt="Laptop" class="w-full"/>
+                            <div class="py-8 px-6">
+                                <h3><a href="#" class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate">Work From Home</a></h3>
+                                <p class="font-medium text-secondary mb-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, illo?</p>
+                                <a href="#" class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+                        <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
+                            <img src="https://fastly.picsum.photos/id/29/4000/2670.jpg?hmac=rCbRAl24FzrSzwlR5tL-Aqzyu5tX_PA95VJtnUXegGU" alt="Mountain" class="w-full"/>
+                            <div class="py-8 px-6">
+                                <h3><a href="#" class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate">The Greatness of The Mountain</a></h3>
+                                <p class="font-medium text-secondary mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus voluptas voluptates quas modi ullam aut.</p>
+                                <a href="#" class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+                        <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
+                            <img src="https://fastly.picsum.photos/id/42/3456/2304.jpg?hmac=dhQvd1Qp19zg26MEwYMnfz34eLnGv8meGk_lFNAJR3g" alt="Coffe" class="w-full"/>
+                            <div class="py-8 px-6">
+                                <h3><a href="#" class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate">Enjoy a Cup of Coffee</a></h3>
+                                <p class="font-medium text-secondary mb-6">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid aperiam numquam consequatur!</p>
+                                <a href="#" class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- Blog Section End -->
+
+
+        <!-- Contact Section Start -->
+        <section id="contact" class="pt-36 pb-32">
+            <div class="container">
+                <div class="w-full px-4">
+                    <div class="max-w-xl mx-auto text-center mb-16">
+                        <h4 class="font-semibold text-lg text-primary mb-2 uppercase">Contact</h4>
+                        <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl">Contact Us</h2>
+                        <p class="font-medium text-md text-secondary md:text-lg mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, consequuntur?</p>
+                    </div>
+                </div>
+
+                <form>
+                    <div class="w-full lg:w-2/3 lg:mx-auto">
+                        <div class="w-full px-4 mb-8">
+                            <label for="name" class="text-base font-bold text-primary">Name</label>
+                            <input type="text" id="name" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary"/>
+                        </div>
+                        
+                        <div class="w-full px-4 mb-8">
+                            <label for="email" class="text-base font-bold text-primary">Email</label>
+                            <input type="text" id="email" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary"/>
+                        </div>
+                        
+                        <div class="w-full px-4 mb-8">
+                            <label for="massage" class="text-base font-bold text-primary">Massage</label>
+                            <textarea type="text" id="email" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary h-32"></textarea>
+                        </div>
+                        <div class="w-full px-4">
+                            <button class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full w-full hover:shadow-lg hover:opacity-80 transition duration-500">Send</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+ 
+        <!-- Contact Section End -->
+
+
+        <!-- Footer Start -->
+        <footer class="bg-dark pt-36 pb-60">
+            <div class="container"></div>
+            <div class="flex flex-wrap">
+                <div class="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/3">
+                    <h2 class="font-bold text-4xl text-white mb-5">Web Programming</h2>
+                    <h3 class="font-bold text-2xl mb-2">Contact Us</h3>
+                    <p>herfando_91@yahoo.com</p>
+                    <p>Perum Unisba No.111</p>
+                    <p>Bandung</p>
+                </div>
+            
+                <div class="w-full px-4 mb-12 md:w-1/3">
+                    <h3 class="font-semibold text-xl text-white mb-5">Writing Category</h3>
+                    <ul class="text-slate-300">
+                        <li>
+                            <a href="#" class="inline-block hover:text-primary mb-3">Programming</a>
+                        </li>
+                        <li>
+                            <a href="#" class="inline-block hover:text-primary mb-3">Technology</a>
+                        </li>
+                        <li>
+                            <a href="#" class="inline-block hover:text-primary mb-3">Lifestyle</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="w-full px-4 mb-12 md:w-1/3">
+                    <h3 class="font-semibold text-xl text-white mb-5">Link</h3>
+                    <ul class="text-slate-300">
+                        <li>
+                            <a href="#homepage" class="inline-block hover:text-primary mb-3">Home Page</a>
+                        </li>
+                        <li>
+                            <a href="#about" class="inline-block hover:text-primary mb-3">About Me</a>
+                        </li>
+                        <li>
+                            <a href="#portfolio" class="inline-block hover:text-primary mb-3">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#clients" class="inline-block hover:text-primary mb-3">Clients</a>
+                        </li>
+                        <li>
+                            <a href="#blog" class="inline-block hover:text-primary mb-3">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="inline-block hover:text-primary mb-3">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="w-full pt-10 border-t border-slate-700">
+                    <div class="flex items-center justify-center mb-5">
+                        <!-- Yahoo Mail -->
+                         <a href="https://herfando_91@yahoo.com" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-[#FF0000]">
+                            <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg enable-background="new 0 0 512 512" height="512px" id="Layer_1" version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="yahoo"><path d="M254.5,16.5c-131.996,0-239,107.004-239,239s107.004,239,239,239s239-107.004,239-239   S386.496,16.5,254.5,16.5z M412.892,413.892C370.584,456.2,314.333,479.5,254.5,479.5c-59.833,0-116.084-23.3-158.392-65.608   C53.8,371.584,30.5,315.333,30.5,255.5c0-59.833,23.3-116.084,65.608-158.392C138.416,54.8,194.667,31.5,254.5,31.5   c59.833,0,116.084,23.3,158.392,65.608C455.2,139.416,478.5,195.667,478.5,255.5C478.5,315.333,455.2,371.584,412.892,413.892z" fill="#8A2A8F"/><polygon clip-rule="evenodd" fill="#8A2A8F" fill-rule="evenodd" points="378.421,343.25 346.975,339.404 350.469,311.808    381.916,315.647 378.421,343.25  "/><polygon clip-rule="evenodd" fill="#8A2A8F" fill-rule="evenodd" points="409.874,175.865 356.062,169.232 356.407,293.988    379.824,297.128 409.874,175.865  "/><polygon clip-rule="evenodd" fill="#8A2A8F" fill-rule="evenodd" points="378.421,343.25 346.975,339.404 350.469,311.808    381.916,315.647 378.421,343.25  "/><path clip-rule="evenodd" d="M301.549,197.534c-21.669-16.422-49.622-24.458-83.52-24.458   c-34.244,0-62.196,8.035-83.515,24.458c-21.664,16.071-32.499,36.694-32.499,62.204c0,25.86,10.835,46.827,32.499,62.904   c17.679,13.329,39.93,21.131,66.545,23.407h33.806c26.424-2.276,48.712-10.078,66.684-23.407   c21.314-16.076,32.148-37.043,32.148-62.904C333.696,234.229,322.862,213.606,301.549,197.534z M285.472,238.419l-16.422,3.5   c-2.449,0.691-9.087,5.588-20.618,15.026c-12.231,9.782-18.522,16.071-19.568,19.22l-0.699,8.732l-0.35,5.246l1.399,13.273   l21.664,0.351l-0.35,6.638h-35.292l-31.451,0.352l1.049-6.294l10.131-0.345c5.244-0.351,8.392-1.047,9.438-2.104   c0.698-0.691,1.046-4.885,1.046-12.226v-4.535l-0.348-9.088c-0.698-2.098-6.29-9.784-17.12-23.067   c-11.182-13.627-18.522-21.668-22.02-24.467l-20.267-2.795v-5.944c1.051-0.689,12.234-0.689,32.852-0.344   c14.324-0.345,26.208-0.345,35.643,0.344l-0.701,4.897l-21.316,2.104c6.639,9.782,16.775,23.406,30.403,40.529   c17.821-13.627,27.254-22.366,27.602-26.205l-18.167-2.798l-1.4-6.288h30.404l28.648,0.349L285.472,238.419z" fill="#8A2A8F" fill-rule="evenodd"/></g></svg>                            
+                        </a>
+
+                         <!-- WhatsApp -->
+                         <a href="https://wa.me/+6282213114640" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-[#FF0000]">
+                            <?xml version="1.0" ?><svg id="Layer_1" style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style type="text/css">.st0{fill:#25D366;}.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}</style><title/><g><path class="st0" d="M500,1000L500,1000C223.9,1000,0,776.1,0,500v0C0,223.9,223.9,0,500,0h0c276.1,0,500,223.9,500,500v0   C1000,776.1,776.1,1000,500,1000z"/><g><g id="WA_Logo"><g><path class="st1" d="M733.9,267.2c-62-62.1-144.6-96.3-232.5-96.4c-181.1,0-328.6,147.4-328.6,328.6      c0,57.9,15.1,114.5,43.9,164.3L170.1,834l174.2-45.7c48,26.2,102,40,157,40h0.1c0,0,0,0,0,0c181.1,0,328.5-147.4,328.6-328.6      C830.1,411.9,796,329.3,733.9,267.2z M501.5,772.8h-0.1c-49,0-97.1-13.2-139-38.1l-10-5.9L249,755.9l27.6-100.8l-6.5-10.3      c-27.3-43.5-41.8-93.7-41.8-145.4c0.1-150.6,122.6-273.1,273.3-273.1c73,0,141.5,28.5,193.1,80.1c51.6,51.6,80,120.3,79.9,193.2      C774.6,650.3,652,772.8,501.5,772.8z M651.3,568.2c-8.2-4.1-48.6-24-56.1-26.7c-7.5-2.7-13-4.1-18.5,4.1      c-5.5,8.2-21.2,26.7-26,32.2c-4.8,5.5-9.6,6.2-17.8,2.1c-8.2-4.1-34.7-12.8-66-40.8c-24.4-21.8-40.9-48.7-45.7-56.9      c-4.8-8.2-0.5-12.7,3.6-16.8c3.7-3.7,8.2-9.6,12.3-14.4c4.1-4.8,5.5-8.2,8.2-13.7c2.7-5.5,1.4-10.3-0.7-14.4      c-2.1-4.1-18.5-44.5-25.3-61c-6.7-16-13.4-13.8-18.5-14.1c-4.8-0.2-10.3-0.3-15.7-0.3c-5.5,0-14.4,2.1-21.9,10.3      c-7.5,8.2-28.7,28.1-28.7,68.5c0,40.4,29.4,79.5,33.5,84.9c4.1,5.5,57.9,88.4,140.3,124c19.6,8.5,34.9,13.5,46.8,17.3      c19.7,6.3,37.6,5.4,51.7,3.3c15.8-2.4,48.6-19.9,55.4-39c6.8-19.2,6.8-35.6,4.8-39C665,574.4,659.5,572.4,651.3,568.2z"/></g></g></g></g></svg>                            
+                        </a>
+
+                        <!-- GitHub -->
+                         <a href="https://github.com/herfando?tab=repositories" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-[#FF0000]">
+                            <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.0//EN'  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'><svg enable-background="new 0 0 32 32" height="32px" id="Layer_1" version="1.0" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path clip-rule="evenodd" d="M16.003,0C7.17,0,0.008,7.162,0.008,15.997  c0,7.067,4.582,13.063,10.94,15.179c0.8,0.146,1.052-0.328,1.052-0.752c0-0.38,0.008-1.442,0-2.777  c-4.449,0.967-5.371-2.107-5.371-2.107c-0.727-1.848-1.775-2.34-1.775-2.34c-1.452-0.992,0.109-0.973,0.109-0.973  c1.605,0.113,2.451,1.649,2.451,1.649c1.427,2.443,3.743,1.737,4.654,1.329c0.146-1.034,0.56-1.739,1.017-2.139  c-3.552-0.404-7.286-1.776-7.286-7.906c0-1.747,0.623-3.174,1.646-4.292C7.28,10.464,6.73,8.837,7.602,6.634  c0,0,1.343-0.43,4.398,1.641c1.276-0.355,2.645-0.532,4.005-0.538c1.359,0.006,2.727,0.183,4.005,0.538  c3.055-2.07,4.396-1.641,4.396-1.641c0.872,2.203,0.323,3.83,0.159,4.234c1.023,1.118,1.644,2.545,1.644,4.292  c0,6.146-3.74,7.498-7.304,7.893C19.479,23.548,20,24.508,20,26c0,2,0,3.902,0,4.428c0,0.428,0.258,0.901,1.07,0.746  C27.422,29.055,32,23.062,32,15.997C32,7.162,24.838,0,16.003,0z" fill="#181616" fill-rule="evenodd"/><g/><g/><g/><g/><g/><g/></svg>                            
+                        </a>
+
+                        <!-- LinkedId -->
+                         <a href="https://www.linkedin.com/in/herfando-933b48107/" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-[#FF0000]">
+                            <?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.0//EN'  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'><svg enable-background="new 0 0 32 32" height="32px" id="Layer_1" version="1.0" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><circle clip-rule="evenodd" cx="16" cy="16" fill="#007BB5" fill-rule="evenodd" r="16"/><g><rect fill="#FFFFFF" height="14" width="4" x="7" y="11"/><path d="M20.499,11c-2.791,0-3.271,1.018-3.499,2v-2h-4v14h4v-8c0-1.297,0.703-2,2-2c1.266,0,2,0.688,2,2v8h4v-7    C25,14,24.479,11,20.499,11z" fill="#FFFFFF"/><circle cx="9" cy="8" fill="#FFFFFF" r="2"/></g></g><g/><g/><g/><g/><g/><g/></svg>                            
+                        </a>
+                    </div>
+                    <p class="font-medium text-sm text-slate-500 text-center">Created by <a href="https://wa.me/+6282213114640" target="_blank" class="font-bold text-primary">Herfando</a>, Using TailwindCSS</p>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer End -->
+
+    <script src="src/script.js"></script>
+</body>
+</html>
